@@ -1,0 +1,10 @@
+title: Blog Lập Trình Mạng
+description: Trang blog chia sẻ kiến thức về Java và JavaScript.
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Menu yêu cầu
+header_pages:
+  - index.md
+  - blog.md
