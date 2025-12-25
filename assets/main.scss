@@ -95,16 +95,21 @@ code,
 }
 
 .btn-dark-option {
+  display: inline-block;
+  /* Quan trọng để nhận padding và visible box */
   background-color: #2d2d2d;
   color: #e0e0e0 !important;
-  padding: 10px 30px;
+  padding: 12px 30px;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none !important;
   transition: all 0.2s ease;
-  min-width: 120px;
-  border: 1px solid #3d3d3d;
+  min-width: 140px;
+  border: 2px solid #3d3d3d;
+  /* Tăng độ dày viền để rõ khung hơn */
+  margin: 0 5px;
 }
+
 
 .btn-dark-option:hover {
   background-color: #3d3d3d;
