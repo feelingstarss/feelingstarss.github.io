@@ -1,6 +1,3 @@
-### 7. Bài 7: Node.js Network Module
-**File:** `2025-12-07-node-net-module.md`
-```markdown
 ---
 layout: post
 title: "Bài 7: Lập trình TCP Server với Node.js"

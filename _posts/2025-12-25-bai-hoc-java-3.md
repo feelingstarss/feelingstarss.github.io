@@ -1,6 +1,3 @@
-### 3. Bài 3: Giao thức UDP
-**File:** `2025-12-03-udp-protocol-java.md`
-```markdown
 ---
 layout: post
 title: "Bài 3: Tối ưu tốc độ truyền tải với giao thức UDP"

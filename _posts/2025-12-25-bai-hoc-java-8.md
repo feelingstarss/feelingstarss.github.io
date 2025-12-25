@@ -1,6 +1,3 @@
-### 8. Bài 8: Bảo mật ứng dụng mạng
-**File:** `2025-12-08-network-security.md`
-```markdown
 ---
 layout: post
 title: "Bài 8: Bảo mật dữ liệu trong truyền tải mạng"

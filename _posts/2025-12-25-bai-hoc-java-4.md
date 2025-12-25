@@ -1,6 +1,3 @@
-### 4. Bài 4: JavaScript & Lập trình bất đồng bộ
-**File:** `2025-12-04-javascript-async.md`
-```markdown
 ---
 layout: post
 title: "Bài 4: JavaScript và sức mạnh của lập trình bất đồng bộ"

@@ -1,6 +1,3 @@
-### 5. Bài 5: Làm việc với Fetch API
-**File:** `2025-12-05-fetch-api-js.md`
-```markdown
 ---
 layout: post
 title: "Bài 5: Giao tiếp HTTP hiện đại với Fetch API"
