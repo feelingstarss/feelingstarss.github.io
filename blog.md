@@ -75,7 +75,39 @@ permalink: /blog/
 
 </style>
 
+
+  /* Ẩn tiêu đề mặc định 'Blog' của layout Page */
+  .post-header h1.post-title {
+    display: none !important;
+  }
+
+  /* Style cho tiêu đề mới */
+  .custom-blog-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .custom-blog-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .custom-blog-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+</style>
+
 <div class="post-list-container">
+  
+  <div class="custom-blog-header">
+    <h1>Góc Chia Sẻ Kiến Thức</h1>
+    <p>Chào mừng bạn đến với không gian học tập của Kiệt. Nơi lưu giữ những bài học tâm đắc về Java, Network và hành trình trở thành Developer chuyên nghiệp.</p>
+  </div>
+
   <div class="search-container">
     <input type="text" id="search-input" placeholder="Nhập tên bài viết để tìm kiếm...">
   </div>
