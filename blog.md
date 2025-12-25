@@ -72,10 +72,6 @@ permalink: /blog/
     margin: 0;
   }
 
-
-</style>
-
-
   /* Ẩn tiêu đề mặc định 'Blog' của layout Page */
   .post-header h1.post-title {
     display: none !important;
@@ -100,6 +96,9 @@ permalink: /blog/
     line-height: 1.6;
   }
 </style>
+
+
+
 
 <div class="post-list-container">
   
