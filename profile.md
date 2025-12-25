@@ -12,7 +12,7 @@ permalink: /profile/
 
 ## 👋 Xin chào!
 
-Mình là **Nguyễn Hứa Tuấn Kiệt**, hiện đang là sinh viên năm 4 chuyên ngành **An toàn thông tin (An ninh mạng)** tại **Trường Đại học Công nghệ Thành phố Hồ Chí Minh (HUTECH)**.
+Mình là Nguyễn Hứa Tuấn Kiệt, hiện đang là sinh viên năm 4 chuyên ngành An toàn thông tin (An ninh mạng) tại Trường Đại học Công nghệ Thành phố Hồ Chí Minh (HUTECH).
 
 Công nghệ thông tin đối với mình không chỉ là những dòng code khô khan, mà là công cụ mạnh mẽ để giải quyết các vấn đề thực tế và bảo vệ an toàn trong kỷ nguyên số. Blog này là nơi mình ghi lại hành trình học tập, nghiên cứu và chia sẻ những kiến thức thú vị mà mình tích lũy được.
 
@@ -53,17 +53,11 @@ Mình luôn chủ động tìm tòi và cập nhật các công nghệ mới. D�
 - Phát triển Blog này trở thành một kho tàng kiến thức nhỏ hữu ích cho cộng đồng sinh viên IT.
 
 ### Dài hạn
-- Trở thành một **Chuyên gia An ninh mạng** hoặc **Full-stack Developer** có tư duy bảo mật cao.
+- Trở thành một Chuyên gia An ninh mạng hoặc Full-stack Developer có tư duy bảo mật cao.
 - Tham gia các dự án lớn, giải quyết các bài toán hóc búa về bảo mật và hiệu năng hệ thống.
 
 ---
 
-## 📬 Liên hệ
 
-Rất vui được kết nối và trao đổi kiến thức với các bạn!
-
-- **Email**: [thay_email_cua_ban_o_day@email.com](mailto:#)
-- **GitHub**: [github.com/feelingstarss](https://github.com/feelingstarss)
-- **Facebook**: [facebook.com/k.profile](https://facebook.com)
 
 > *"Learning never exhausts the mind."*
