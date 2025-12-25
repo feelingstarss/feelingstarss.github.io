@@ -11,101 +11,122 @@ permalink: /blog/
     padding: 20px 10px;
   }
 
+  /* KHU VỰC THANH TÌM KIẾM */
+  .search-container {
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  #search-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #e1e4e8;
+    border-radius: 25px; /* Bo tròn hiện đại */
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  #search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.15);
+  }
+
+  /* CSS CHO CÁC THẺ BÀI VIẾT */
   .post-card-link {
     text-decoration: none !important;
     color: inherit !important;
     display: block;
     margin-bottom: 20px;
+    transition: transform 0.3s;
   }
 
   .post-card {
     background: #ffffff;
     border: 1px solid #e1e4e8;
     border-radius: 12px;
-    padding: 22px 25px; 
+    padding: 20px 25px; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
   }
 
-  .post-card-link:hover .post-card {
+  .post-card-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    border-color: #007bff;
   }
 
-  /* TỰA ĐỀ: Nhỏ lại (1.05rem) và in đậm cực mạnh (800) */
   .post-title {
-    font-size: 1.05rem !important; 
+    font-size: 1.2rem !important;
     font-weight: 800 !important;
     color: #1a1a1a;
-    margin: 0 0 10px 0;
-    line-height: 1.2;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin: 0 0 8px 0;
     display: block;
-  }
-
-  .post-card-link:hover .post-title {
-    color: #007bff;
   }
 
   .post-description {
     color: #586069;
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     line-height: 1.5;
     margin: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 
-  /* ĐƯỜNG TRANG TRÍ BÊN TRÁI KHI HOVER */
-  .post-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 100%;
-    background-color: transparent;
-    transition: 0.3s;
-  }
-
-  .post-card-link:hover .post-card::before {
-    background-color: #007bff;
-  }
-
-  /* FIX LỖI CODE BÀI 4-9: Tự động đóng khung và xuống hàng cho mọi khối code */
+  /* CSS CHO PHẦN CODE TRONG BÀI VIẾT (Dùng cho trang chi tiết) */
   pre, code, .highlight {
-    background: #1e1e1e !important; /* Nền tối như ảnh mẫu */
+    background: #1e1e1e !important;
     color: #d1d1d1 !important;
     border-radius: 8px;
     padding: 15px;
     display: block;
+    white-space: pre !important;
     overflow-x: auto;
-    white-space: pre !important; /* Giữ nguyên định dạng xuống hàng */
-    font-family: 'Consolas', 'Monaco', monospace;
-    font-size: 0.85rem;
     margin: 15px 0;
-    border: 1px solid #333;
   }
 </style>
 
 <div class="post-list-container">
-  {% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}" class="post-card-link">
-      <article class="post-card">
-        <h2 class="post-title">
-          {{ post.title }}
-        </h2>
-        <div class="post-description">
-          {{ post.excerpt | strip_html }}
-        </div>
-      </article>
-    </a>
-  {% endfor %}
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Nhập tên bài viết để tìm kiếm...">
+  </div>
+
+  <div id="post-list">
+    {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}" class="post-card-link" data-title="{{ post.title | downcase }}" data-content="{{ post.excerpt | strip_html | downcase }}">
+        <article class="post-card">
+          <h2 class="post-title">{{ post.title }}</h2>
+          <p class="post-description">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+        </article>
+      </a>
+    {% endfor %}
+  </div>
+
+  <p id="no-results" style="display: none; text-align: center; color: #888; margin-top: 20px;">
+    Không tìm thấy bài viết nào phù hợp...
+  </p>
 </div>
+
+<script>
+  const searchInput = document.getElementById('search-input');
+  const postCards = document.querySelectorAll('.post-card-link');
+  const noResults = document.getElementById('no-results');
+
+  searchInput.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase().trim();
+    let hasResults = false;
+
+    postCards.forEach(card => {
+      const title = card.getAttribute('data-title');
+      const content = card.getAttribute('data-content');
+
+      if (title.includes(searchTerm) || content.includes(searchTerm)) {
+        card.style.display = 'block';
+        hasResults = true;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Hiện thông báo nếu không có kết quả
+    noResults.style.display = hasResults ? 'none' : 'block';
+  });
+</script>

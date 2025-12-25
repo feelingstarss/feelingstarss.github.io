@@ -7,6 +7,7 @@ WebSocket giữ kết nối luôn mở, cho phép Server chủ động gửi d�
 HTTP đóng kết nối sau mỗi lần nhận data, còn WebSocket thì không.
 
 ### **2. Code Client WebSocket**
+
 ```javascript
 const socket = new WebSocket('ws://localhost:8080');
 

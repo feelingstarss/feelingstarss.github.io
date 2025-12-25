@@ -7,6 +7,7 @@ Node.js cực mạnh trong việc xử lý hàng ngàn kết nối đồng thờ
 Đây là module cốt lõi để làm việc với các tầng mạng thấp trong Node.js.
 
 ### **2. Code Server TCP đơn giản**
+
 ```javascript
 const net = require('net');
 

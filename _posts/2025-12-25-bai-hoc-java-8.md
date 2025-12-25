@@ -6,10 +6,8 @@ Mạng internet chứa đựng nhiều rủi ro, bảo mật dữ liệu là y�
 ### **1. HTTPS và mã hóa**
 Luôn sử dụng SSL/TLS để mã hóa đường truyền giữa Client và Server.
 
-### **2. Kiểm tra dữ liệu đầu vào**
-Không bao giờ tin tưởng dữ liệu từ mạng gửi về, luôn phải kiểm tra định dạng.
+### **2. Ví dụ Code kiểm tra sơ bộ**
 
-### **3. Ví dụ Code kiểm tra sơ bộ**
 ```javascript
 function xuLyDuLieu(input) {
     if (typeof input !== 'string') {

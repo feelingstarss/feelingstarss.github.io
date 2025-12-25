@@ -7,6 +7,7 @@ Trong mạng, việc chờ dữ liệu không được làm nghẽn ứng dụng
 Giúp code bất đồng bộ trông giống như code chạy tuần tự, dễ đọc và dễ bảo trì hơn.
 
 ### **2. Code minh họa**
+
 ```javascript
 async function layDuLieu() {
     console.log("Bắt đầu lấy dữ liệu...");
@@ -18,6 +19,7 @@ async function layDuLieu() {
         console.error("Lỗi mạng:", err);
     }
 }
+
 layDuLieu();
 
 ### **3. Lợi ích**

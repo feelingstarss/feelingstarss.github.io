@@ -7,6 +7,7 @@ Fetch API là công cụ tiêu chuẩn để JavaScript giao tiếp với Backen
 Dùng để gửi dữ liệu từ Client lên Server (ví dụ khi đăng ký tài khoản).
 
 ### **2. Code ví dụ gửi dữ liệu**
+
 ```javascript
 const user = { 
     name: "Kiet", 
