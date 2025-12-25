@@ -7,89 +7,94 @@ permalink: /blog/
 <style>
   /* Container tổng */
   .post-list-container {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 20px 0;
   }
 
-  /* Khung của mỗi bài viết (Card) */
+  /* Khung bài viết biến thành liên kết */
+  .post-card-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+    margin-bottom: 25px;
+  }
+
   .post-card {
     background: #ffffff;
     border: 1px solid #e1e4e8;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 25px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
   }
 
-  /* Hiệu ứng khi di chuột vào khung */
-  .post-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    border-color: #3498db;
+  /* Hiệu ứng khi di chuột vào bất kỳ đâu trong khung */
+  .post-card-link:hover .post-card {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    border-color: #007bff;
   }
 
-  /* Tiêu đề: Nhỏ lại, in đậm, giới hạn 1 dòng */
-  .post-title-link {
-    font-size: 1.15rem; /* Chữ nhỏ vừa phải */
-    font-weight: 800;   /* Siêu đậm */
-    color: #1a1a1a;
-    text-decoration: none;
+  /* Tiêu đề: Nhỏ lại, cực đậm, 1 dòng duy nhất */
+  .post-title {
+    font-size: 1.1rem;
+    font-weight: 800; /* In đậm theo yêu cầu */
+    color: #24292e;
+    margin: 0 0 12px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Hiện dấu ... nếu tiêu đề dài */
     display: block;
-    white-space: nowrap;      /* Không cho xuống dòng */
-    overflow: hidden;         /* Ẩn phần thừa */
-    text-overflow: ellipsis;  /* Hiện dấu ... nếu quá dài */
-    margin-bottom: 10px;
   }
 
-  .post-card:hover .post-title-link {
-    color: #3498db;
+  .post-card-link:hover .post-title {
+    color: #007bff;
   }
 
-  /* Đoạn giới thiệu ngắn */
+  /* Nội dung mô tả ngắn */
   .post-description {
     color: #586069;
     font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 15px;
-    /* Giới hạn hiển thị 2 dòng mô tả cho gọn */
+    line-height: 1.6;
+    margin: 0;
+    /* Giới hạn hiển thị 2 dòng nội dung */
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  /* Nút Đọc tiếp */
-  .btn-readmore {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #3498db;
-    text-decoration: none;
-    align-self: flex-start;
+  /* Trang trí thêm một đường gạch màu nhỏ khi hover */
+  .post-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s;
   }
 
-  .btn-readmore:hover {
-    text-decoration: underline;
+  .post-card-link:hover .post-card::before {
+    background-color: #007bff;
   }
 </style>
 
 <div class="post-list-container">
   {% for post in site.posts %}
-    <article class="post-card">
-      <a href="{{ post.url | relative_url }}" class="post-title-link">
-        {{ post.title }}
-      </a>
-      
-      <div class="post-description">
-        {{ post.excerpt | strip_html }}
-      </div>
-      
-      <a href="{{ post.url | relative_url }}" class="btn-readmore">
-        Đọc tiếp...
-      </a>
-    </article>
+    <a href="{{ post.url | relative_url }}" class="post-card-link">
+      <article class="post-card">
+        <h2 class="post-title">
+          {{ post.title }}
+        </h2>
+        <div class="post-description">
+          {{ post.excerpt | strip_html }}
+        </div>
+      </article>
+    </a>
   {% endfor %}
 </div>
