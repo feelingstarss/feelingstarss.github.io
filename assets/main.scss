@@ -115,5 +115,12 @@ code,
   background-color: #3d3d3d;
   color: #fff !important;
   transform: translateY(-2px);
-  border-color: #555;
-}
+
+  /* FIX GIAO DIỆN TIÊU ĐỀ HEADER */
+  .site-title,
+  .site-title:visited {
+    text-transform: none !important;
+    /* Tắt viết hoa toàn bộ */
+    font-weight: bold !important;
+    /* In đậm */
+  }
