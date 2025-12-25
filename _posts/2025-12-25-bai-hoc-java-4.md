@@ -21,5 +21,7 @@ async function layDuLieu() {
 
 layDuLieu();
 
+```
+
 ### **3. Lợi ích**
 Ứng dụng web vẫn mượt mà trong khi dữ liệu đang được tải từ Server.

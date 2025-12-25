@@ -20,5 +20,7 @@ const server = net.createServer((socket) => {
 
 server.listen(3000, '127.0.0.1');
 
+```
+
 ### **3. Ưu điểm**
 Tốn cực ít RAM so với các mô hình đa luồng truyền thống.

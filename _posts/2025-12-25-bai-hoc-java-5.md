@@ -19,5 +19,7 @@ fetch('https://reqres.in/api/users', {
 .then(res => res.json())
 .then(data => console.log("Thành công:", data));
 
+```
+
 ### **3. Định dạng JSON**
 JSON là ngôn ngữ chung để Java và JavaScript có thể hiểu nhau trong mạng.

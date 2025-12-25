@@ -19,5 +19,7 @@ socket.onmessage = (event) => {
     console.log("Tin nhắn từ Server:", event.data);
 };
 
+```
+
 ### **3. Ứng dụng**
 Hệ thống chat, thông báo đẩy, cập nhật giá chứng khoán thời gian thực.

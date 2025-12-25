@@ -72,19 +72,7 @@ permalink: /blog/
     margin: 0;
   }
 
-  /* FIX TRIỆT ĐỂ LỖI CODE TRONG BÀI VIẾT */
-  pre, code, .highlight, .highlighter-rouge pre {
-    background: #1e1e1e !important;
-    color: #d1d1d1 !important;
-    border-radius: 8px;
-    padding: 15px !important;
-    display: block !important;
-    white-space: pre !important; /* Ép xuống hàng đúng vị trí */
-    overflow-x: auto !important; /* Hiện thanh cuộn nếu code quá dài */
-    margin: 20px 0 !important;
-    font-family: 'Consolas', 'Monaco', monospace !important;
-    line-height: 1.6 !important;
-  }
+
 </style>
 
 <div class="post-list-container">

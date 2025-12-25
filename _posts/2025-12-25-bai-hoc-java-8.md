@@ -18,5 +18,7 @@ function xuLyDuLieu(input) {
 
 xuLyDuLieu("Dữ liệu từ Client");
 
+```
+
 ### **4. Kết luận**
 Bảo mật tốt giúp bảo vệ uy tín và thông tin của người dùng.

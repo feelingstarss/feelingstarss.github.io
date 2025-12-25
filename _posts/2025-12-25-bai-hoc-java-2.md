@@ -25,5 +25,7 @@ public class MyServer {
     }
 }
 
+```
+
 ### **3. Ứng dụng**
 Dùng trong truyền tải file, email hoặc bất kỳ ứng dụng nào không cho phép mất dữ liệu.
