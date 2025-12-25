@@ -11,7 +11,6 @@ permalink: /blog/
     padding: 20px 10px;
   }
 
-  /* KHU VỰC THANH TÌM KIẾM */
   .search-container {
     margin-bottom: 30px;
     position: relative;
@@ -22,7 +21,7 @@ permalink: /blog/
     padding: 12px 20px;
     font-size: 1rem;
     border: 2px solid #e1e4e8;
-    border-radius: 25px; /* Bo tròn hiện đại */
+    border-radius: 25px;
     outline: none;
     transition: all 0.3s ease;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
@@ -33,7 +32,6 @@ permalink: /blog/
     box-shadow: 0 4px 12px rgba(0,123,255,0.15);
   }
 
-  /* CSS CHO CÁC THẺ BÀI VIẾT */
   .post-card-link {
     text-decoration: none !important;
     color: inherit !important;
@@ -57,11 +55,14 @@ permalink: /blog/
   }
 
   .post-title {
-    font-size: 1.2rem !important;
+    font-size: 1.05rem !important; /* Đã chỉnh nhỏ lại theo ý bạn */
     font-weight: 800 !important;
     color: #1a1a1a;
     margin: 0 0 8px 0;
     display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .post-description {
@@ -71,16 +72,18 @@ permalink: /blog/
     margin: 0;
   }
 
-  /* CSS CHO PHẦN CODE TRONG BÀI VIẾT (Dùng cho trang chi tiết) */
-  pre, code, .highlight {
+  /* FIX TRIỆT ĐỂ LỖI CODE TRONG BÀI VIẾT */
+  pre, code, .highlight, .highlighter-rouge pre {
     background: #1e1e1e !important;
     color: #d1d1d1 !important;
     border-radius: 8px;
-    padding: 15px;
-    display: block;
-    white-space: pre !important;
-    overflow-x: auto;
-    margin: 15px 0;
+    padding: 15px !important;
+    display: block !important;
+    white-space: pre !important; /* Ép xuống hàng đúng vị trí */
+    overflow-x: auto !important; /* Hiện thanh cuộn nếu code quá dài */
+    margin: 20px 0 !important;
+    font-family: 'Consolas', 'Monaco', monospace !important;
+    line-height: 1.6 !important;
   }
 </style>
 
@@ -125,8 +128,6 @@ permalink: /blog/
         card.style.display = 'none';
       }
     });
-
-    // Hiện thông báo nếu không có kết quả
     noResults.style.display = hasResults ? 'none' : 'block';
   });
 </script>

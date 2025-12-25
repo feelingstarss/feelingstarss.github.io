@@ -13,8 +13,10 @@ function xuLyDuLieu(input) {
     if (typeof input !== 'string') {
         return "Dữ liệu không hợp lệ!";
     }
-    console.log("Dữ liệu hợp lệ: " + input);
+    console.log("Đang xử lý an toàn: " + input);
 }
+
+xuLyDuLieu("Dữ liệu từ Client");
 
 ### **4. Kết luận**
 Bảo mật tốt giúp bảo vệ uy tín và thông tin của người dùng.

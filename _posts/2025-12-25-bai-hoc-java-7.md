@@ -12,9 +12,9 @@ Node.js cực mạnh trong việc xử lý hàng ngàn kết nối đồng thờ
 const net = require('net');
 
 const server = net.createServer((socket) => {
-    socket.write('Chào bạn đến với Node Server!\n');
+    socket.write('Chào bạn đến với Server!\n');
     socket.on('data', (data) => {
-        console.log('Nhận:', data.toString());
+        console.log('Client gửi:', data.toString());
     });
 });
 

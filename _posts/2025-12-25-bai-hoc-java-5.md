@@ -9,18 +9,15 @@ Dùng để gửi dữ liệu từ Client lên Server (ví dụ khi đăng ký t
 ### **2. Code ví dụ gửi dữ liệu**
 
 ```javascript
-const user = { 
-    name: "Kiet", 
-    job: "Developer" 
-};
+const user = { name: "Kiet", job: "Dev" };
 
-fetch('[https://reqres.in/api/users](https://reqres.in/api/users)', {
+fetch('https://reqres.in/api/users', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(user)
 })
 .then(res => res.json())
-.then(data => console.log("Kết quả:", data));
+.then(data => console.log("Thành công:", data));
 
 ### **3. Định dạng JSON**
 JSON là ngôn ngữ chung để Java và JavaScript có thể hiểu nhau trong mạng.
