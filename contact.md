@@ -8,9 +8,10 @@ Nếu bạn có bất kỳ thắc mắc nào hoặc muốn trao đổi thêm v�
 
 ## Thông tin liên hệ
 
-- **Email:** example@email.com
-- **Facebook:** [Profile Facebook của tôi](#)
-- **GitHub:** [github.com/feelingstarss](https://github.com/feelingstarss)
+- **Email:** kietnguyen030696@gmail.com
+- **Facebook:** [Facebook của tôi](https://www.facebook.com/Kietnguyennnn)
+- **GitHub:** <a href="https://github.com/feelingstarss" target="_blank">github.com/feelingstarss</a>
+
 
 ## Gửi tin nhắn
 
