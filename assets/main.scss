@@ -20,82 +20,95 @@ code,
 }
 
 
-/* === MINIMAL HOMEPAGE STYLES === */
+
+/* === DARK MINIMALIST HOMEPAGE === */
 .home-container {
+  background-color: #1a1a1a;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 60px;
-  min-height: 60vh;
+  padding: 80px 20px;
+  min-height: 80vh;
+  border-radius: 12px;
 }
 
 .hero-avatar {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #fff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
 }
 
-.hero-name {
+.hero-header {
+  margin-bottom: 10px;
+}
+
+.hero-branding {
   font-size: 2.2rem;
   font-weight: 800;
-  color: #24292e;
-  margin-bottom: 15px;
+  color: #e6e6e6;
+  margin: 0 0 10px 0;
+  display: block;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero-welcome {
-  font-size: 1.2rem;
-  color: #586069;
-  margin-bottom: 40px;
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  margin-bottom: 25px;
+  font-weight: 300;
   max-width: 600px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-/* === NEW BUTTON STYLES (BLUE THEME) === */
-.hero-buttons {
+/* Social Icons */
+.social-links {
   display: flex;
   gap: 20px;
+  margin-bottom: 35px;
   justify-content: center;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 30px;
+.social-icon {
+  width: 24px;
+  height: 24px;
+  fill: #a0a0a0;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  fill: #fff;
+  transform: translateY(-3px);
+}
+
+/* Buttons like the image options */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-dark-option {
+  background-color: #2d2d2d;
+  color: #e0e0e0 !important;
+  padding: 10px 30px;
   border-radius: 8px;
-  /* Bo góc nhẹ như ảnh */
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none !important;
-  font-size: 1rem;
   transition: all 0.2s ease;
-  min-width: 160px;
-  /* Đảm bảo nút có độ rộng tương đồng */
-  text-align: center;
+  min-width: 120px;
+  border: 1px solid #3d3d3d;
 }
 
-/* Nút Xem Profile: Xanh dương đặc */
-.btn-primary {
-  background-color: #007bff;
-  color: white !important;
-  border: 2px solid #007bff;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-
-/* Nút Đọc bài viết: Viền xanh dương */
-.btn-outline {
-  background-color: transparent;
-  color: #007bff !important;
-  border: 2px solid #007bff;
-}
-
-.btn-outline:hover {
-  background-color: #f0f8ff;
+.btn-dark-option:hover {
+  background-color: #3d3d3d;
+  color: #fff !important;
+  transform: translateY(-2px);
+  border-color: #555;
 }
