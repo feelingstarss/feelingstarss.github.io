@@ -22,7 +22,6 @@ permalink: /blog/
     background: #ffffff;
     border: 1px solid #e1e4e8;
     border-radius: 12px;
-    /* Tăng padding để chữ không bị sát mép */
     padding: 22px 25px; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
@@ -36,13 +35,13 @@ permalink: /blog/
     border-color: #007bff;
   }
 
-  /* TỰA ĐỀ: Điều chỉnh kích thước nhỏ lại để không bị mất chữ */
+  /* TỰA ĐỀ: Nhỏ lại (1.05rem) và in đậm cực mạnh (800) */
   .post-title {
-    font-size: 1.2rem;   /* Giảm nhẹ kích thước để rõ chữ hơn */
-    font-weight: 800;    /* Giữ độ đậm chuyên nghiệp */
+    font-size: 1.05rem !important; 
+    font-weight: 800 !important;
     color: #1a1a1a;
     margin: 0 0 10px 0;
-    line-height: 1.3;    /* Tăng khoảng cách dòng để không bị dính chữ */
+    line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -55,8 +54,8 @@ permalink: /blog/
 
   .post-description {
     color: #586069;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.92rem;
+    line-height: 1.5;
     margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -64,7 +63,7 @@ permalink: /blog/
     overflow: hidden;
   }
 
-  /* Đường trang trí bên trái khi hover */
+  /* ĐƯỜNG TRANG TRÍ BÊN TRÁI KHI HOVER */
   .post-card::before {
     content: "";
     position: absolute;
@@ -78,6 +77,21 @@ permalink: /blog/
 
   .post-card-link:hover .post-card::before {
     background-color: #007bff;
+  }
+
+  /* FIX LỖI CODE BÀI 4-9: Tự động đóng khung và xuống hàng cho mọi khối code */
+  pre, code, .highlight {
+    background: #1e1e1e !important; /* Nền tối như ảnh mẫu */
+    color: #d1d1d1 !important;
+    border-radius: 8px;
+    padding: 15px;
+    display: block;
+    overflow-x: auto;
+    white-space: pre !important; /* Giữ nguyên định dạng xuống hàng */
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.85rem;
+    margin: 15px 0;
+    border: 1px solid #333;
   }
 </style>
 

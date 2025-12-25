@@ -8,7 +8,10 @@ Dùng để gửi dữ liệu từ Client lên Server (ví dụ khi đăng ký t
 
 ### **2. Code ví dụ gửi dữ liệu**
 ```javascript
-const user = { name: "Kiet", job: "Developer" };
+const user = { 
+    name: "Kiet", 
+    job: "Developer" 
+};
 
 fetch('[https://reqres.in/api/users](https://reqres.in/api/users)', {
     method: 'POST',

@@ -15,7 +15,7 @@ function xuLyDuLieu(input) {
     if (typeof input !== 'string') {
         return "Dữ liệu không hợp lệ!";
     }
-    // Tiến hành xử lý an toàn...
+    console.log("Dữ liệu hợp lệ: " + input);
 }
 
 ### **4. Kết luận**
