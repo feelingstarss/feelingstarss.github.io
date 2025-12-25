@@ -1,7 +1,18 @@
+### 3. Bài 3: Giao thức UDP
+**File:** `2025-12-03-udp-protocol-java.md`
+```markdown
 ---
 layout: post
-title: "Bài 3: Xây dựng ứng dụng Chat đơn giản với Socket TCP trong Java"
+title: "Bài 3: Tối ưu tốc độ truyền tải với giao thức UDP"
 ---
-Tìm hiểu cách sử dụng lớp ServerSocket và Socket để tạo ra một đường truyền dữ liệu tin cậy giữa hai máy tính.
+UDP nhanh hơn TCP nhưng không đảm bảo độ tin cậy. Vậy khi nào chúng ta nên dùng nó?
+### 1. Đặc điểm của UDP
+UDP là giao thức không hướng kết nối (Connectionless). Nó gửi các gói tin đi mà không cần chờ xác nhận từ phía nhận.
 
-Giao thức TCP (Transmission Control Protocol) đảm bảo dữ liệu được gửi đi một cách chính xác và đúng thứ tự. Chúng ta sẽ viết code tạo một Server lắng nghe cổng 8080 và một Client kết nối tới để gửi tin nhắn văn bản đơn giản.
+### 2. Ví dụ Code gửi dữ liệu
+```java
+DatagramSocket socket = new DatagramSocket();
+byte[] buffer = "Xin chào UDP".getBytes();
+InetAddress address = InetAddress.getByName("localhost");
+DatagramPacket packet = new DatagramPacket(buffer, buffer.length, address, 9000);
+socket.send(packet);

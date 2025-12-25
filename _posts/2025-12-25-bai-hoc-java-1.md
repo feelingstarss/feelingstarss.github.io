@@ -2,6 +2,14 @@
 layout: post
 title: "Bài 1: Tổng quan về lập trình mạng và mô hình Client-Server"
 ---
-Lập trình mạng là nền tảng của internet hiện đại, cho phép các máy tính trao đổi dữ liệu với nhau thông qua các quy tắc chung gọi là giao thức.
+Lập trình mạng là nền tảng của internet hiện đại, cho phép các máy tính trao đổi dữ liệu qua các giao thức chung.
+### 1. Mô hình Client-Server là gì?
+Trong mô hình này, một máy tính (Server) sẽ chờ đợi các yêu cầu từ các máy tính khác (Client). Khi Client gửi yêu cầu, Server sẽ xử lý và trả về kết quả.
 
-Trong bài viết này, chúng ta sẽ tìm hiểu về mô hình Client-Server. Client (Máy khách) gửi yêu cầu và Server (Máy chủ) xử lý yêu cầu đó. Đây là cơ sở để chúng ta phát triển các ứng dụng bằng Java và JavaScript sau này.
+### 2. Các thành phần chính
+- **IP Address:** Địa chỉ định danh thiết bị.
+- **Port:** Cổng dịch vụ (ví dụ: HTTP là 80, HTTPS là 443).
+- **Protocol:** Quy tắc truyền tải dữ liệu (TCP/UDP).
+
+### 3. Kết luận
+Hiểu rõ mô hình này là bước đầu tiên để bạn xây dựng các ứng dụng web hay hệ thống chat sau này.

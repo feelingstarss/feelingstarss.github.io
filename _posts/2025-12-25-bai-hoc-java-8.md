@@ -1,7 +1,18 @@
+### 8. Bài 8: Bảo mật ứng dụng mạng
+**File:** `2025-12-08-network-security.md`
+```markdown
 ---
 layout: post
-title: "Bài 8: Lập trình mạng phía Server với Node.js và module Net"
+title: "Bài 8: Bảo mật dữ liệu trong truyền tải mạng"
 ---
-Node.js cung cấp module 'net' cực kỳ mạnh mẽ để làm việc với các dòng dữ liệu (streams) ở tầng thấp.
+Đừng để lộ thông tin người dùng! Hãy tìm hiểu về SSL/TLS và mã hóa dữ liệu.
+### 1. Các nguy cơ tiềm ẩn
+- Đánh cắp gói tin (Sniffing).
+- Tấn công giả mạo (Spoofing).
 
-Chúng ta sẽ cùng xây dựng một TCP Server bằng Node.js. Bạn sẽ thấy sức mạnh của JavaScript khi xử lý các sự kiện kết nối và truyền dữ liệu chỉ với vài dòng mã nguồn ngắn gọn nhưng cực kỳ hiệu quả.
+### 2. Giải pháp cơ bản
+- Luôn sử dụng **HTTPS** thay vì HTTP.
+- Mã hóa mật khẩu bằng các thuật toán như BCrypt trước khi lưu.
+
+### 3. Ví dụ mã hóa đơn giản (Java)
+Luôn dùng các thư viện bảo mật tiêu chuẩn, không nên tự viết lại thuật toán mã hóa riêng.

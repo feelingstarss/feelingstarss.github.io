@@ -1,7 +1,16 @@
 ---
 layout: post
-title: "Bài 9: Các nguyên tắc bảo mật quan trọng khi lập trình mạng"
+title: "Bài 9: Tổng kết lộ trình trở thành chuyên gia lập trình mạng"
 ---
-Dữ liệu trên mạng rất dễ bị đánh cắp. Làm thế nào để bảo vệ ứng dụng Java và JavaScript của bạn khỏi các cuộc tấn công?
+Sau 8 bài học, chúng ta đã đi qua từ căn bản đến nâng cao. Đây là hướng đi tiếp theo cho bạn.
+### 1. Những gì chúng ta đã học
+- Mô hình Client-Server.
+- Socket trong Java (TCP/UDP).
+- JavaScript bất đồng bộ & Fetch API.
+- Real-time với WebSocket & Node.js.
 
-Bài viết cuối cùng trong chuỗi series này sẽ tổng hợp các kiến thức về mã hóa dữ liệu (HTTPS/SSL), xác thực người dùng (Auth) và cách chống lại các cuộc tấn công phổ biến như SQL Injection hay Cross-Site Scripting (XSS).
+### 2. Lời khuyên
+Hãy thực hành xây dựng một dự án nhỏ như: Ứng dụng Chat, Trang web theo dõi giá tiền điện tử hoặc Hệ thống điều khiển từ xa.
+
+### 3. Lời kết
+Chúc các bạn thành công trên con đường trở thành một Developer chuyên nghiệp!
