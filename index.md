@@ -1,8 +1,6 @@
 ---
 layout: home
-title: Giới thiệu
+title: Giới thiệu Profile
 ---
-# Chào mừng đến với Blog của [Tên Bạn]
-Đây là nơi mình chia sẻ về lộ trình học lập trình mạng.
-- **Họ tên:** Nguyễn Văn A
-- **Kỹ năng:** Java, JavaScript, Network Programming.
+# Chào mừng bạn đến với Blog của tôi!
+Tôi là một sinh viên đam mê lập trình mạng. Blog này chia sẻ các kiến thức về Java và JavaScript.
