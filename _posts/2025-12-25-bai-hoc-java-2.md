@@ -2,20 +2,28 @@
 layout: post
 title: "Bài 2: Xây dựng kết nối tin cậy với Socket TCP trong Java"
 ---
-Tìm hiểu cách sử dụng bộ đôi ServerSocket và Socket để truyền tải dữ liệu chính xác tuyệt đối.
-### 1. Tại sao dùng TCP?
-TCP (Transmission Control Protocol) đảm bảo dữ liệu gửi đi không bị mất mát và đúng thứ tự.
+TCP là giao thức hướng kết nối, đảm bảo dữ liệu được truyền đi chính xác 100% và đúng thứ tự.
+### **1. Tại sao chọn TCP?**
+TCP thực hiện cơ chế bắt tay 3 bước để đảm bảo đường truyền ổn định trước khi gửi dữ liệu.
 
-### 2. Ví dụ Code minh họa (Server)
+### **2. Ví dụ Code Server TCP**
 ```java
 import java.io.*;
 import java.net.*;
 
-public class SimpleServer {
+public class MyServer {
     public static void main(String[] args) throws IOException {
-        ServerSocket server = new ServerSocket(8080);
-        System.out.println("Server đang chờ...");
+        ServerSocket server = new ServerSocket(8888);
+        System.out.println("Server đang chờ kết nối...");
+        
         Socket socket = server.accept();
-        System.out.println("Client đã kết nối!");
+        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+        out.println("Kết nối TCP thành công!");
+        
+        socket.close();
+        server.close();
     }
 }
+
+### **3. Ứng dụng**
+Dùng trong truyền tải file, email hoặc bất kỳ ứng dụng nào không cho phép mất dữ liệu.

@@ -2,18 +2,23 @@
 layout: post
 title: "Bài 4: JavaScript và sức mạnh của lập trình bất đồng bộ"
 ---
-Lập trình mạng đòi hỏi thời gian chờ phản hồi, JavaScript xử lý việc này cực tốt bằng Async/Await.
-### 1. Vấn đề của lập trình đồng bộ
-Trong mạng, nếu bạn chờ phản hồi mà dừng toàn bộ chương trình, ứng dụng sẽ bị "đơ" (lag).
+Trong mạng, việc chờ dữ liệu không được làm nghẽn ứng dụng. JavaScript giải quyết bằng Async/Await.
+### **1. Khái niệm Async/Await**
+Giúp code bất đồng bộ trông giống như code chạy tuần tự, dễ đọc và dễ bảo trì hơn.
 
-### 2. Giải pháp Async/Await
+### **2. Code minh họa**
 ```javascript
-async function getData() {
+async function layDuLieu() {
+    console.log("Bắt đầu lấy dữ liệu...");
     try {
-        let response = await fetch('[https://api.example.com/data](https://api.example.com/data)');
-        let data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error("Lỗi rồi:", error);
+        const response = await fetch('[https://api.github.com/users](https://api.github.com/users)');
+        const data = await response.json();
+        console.log("Dữ liệu nhận được:", data.length);
+    } catch (err) {
+        console.error("Lỗi mạng:", err);
     }
 }
+layDuLieu();
+
+### **3. Lợi ích**
+Ứng dụng web vẫn mượt mà trong khi dữ liệu đang được tải từ Server.

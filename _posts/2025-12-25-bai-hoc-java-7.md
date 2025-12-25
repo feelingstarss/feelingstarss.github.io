@@ -1,18 +1,23 @@
 ---
 layout: post
-title: "Bài 7: Lập trình TCP Server với Node.js"
+title: "Bài 7: Lập trình TCP Server hiệu năng cao với Node.js"
 ---
-Node.js cung cấp module 'net' giúp bạn tạo Server cực nhanh chỉ với vài dòng code.
-### 1. Tại sao chọn Node.js?
-Node.js sử dụng cơ chế Non-blocking I/O, cực kỳ phù hợp để xử lý hàng nghìn kết nối mạng đồng thời.
+Node.js cực mạnh trong việc xử lý hàng ngàn kết nối đồng thời nhờ cơ chế Non-blocking.
+### **1. Module 'net'**
+Đây là module cốt lõi để làm việc với các tầng mạng thấp trong Node.js.
 
-### 2. Code Server TCP
+### **2. Code Server TCP đơn giản**
 ```javascript
 const net = require('net');
 
 const server = net.createServer((socket) => {
-  socket.write('Chào bạn đã đến với Node.js Server\n');
-  socket.pipe(socket); // Echo lại dữ liệu
+    socket.write('Chào bạn đến với Node Server!\n');
+    socket.on('data', (data) => {
+        console.log('Nhận:', data.toString());
+    });
 });
 
-server.listen(1337, '127.0.0.1');
+server.listen(3000, '127.0.0.1');
+
+### **3. Ưu điểm**
+Tốn cực ít RAM so với các mô hình đa luồng truyền thống.

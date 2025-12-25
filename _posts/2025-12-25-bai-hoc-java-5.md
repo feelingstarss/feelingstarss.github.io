@@ -1,16 +1,22 @@
 ---
 layout: post
-title: "Bài 5: Giao tiếp HTTP hiện đại với Fetch API"
+title: "Bài 5: Giao tiếp HTTP hiện đại với Fetch API trong JS"
 ---
-Fetch API là công cụ chuẩn để JavaScript giao tiếp với Server thông qua các HTTP Request.
-### 1. Các phương thức phổ biến
-- **GET:** Lấy dữ liệu.
-- **POST:** Gửi dữ liệu mới lên Server.
+Fetch API là công cụ tiêu chuẩn để JavaScript giao tiếp với Backend thông qua HTTP.
+### **1. Phương thức POST**
+Dùng để gửi dữ liệu từ Client lên Server (ví dụ khi đăng ký tài khoản).
 
-### 2. Ví dụ gửi dữ liệu (POST)
+### **2. Code ví dụ gửi dữ liệu**
 ```javascript
-fetch('[https://api.example.com/posts](https://api.example.com/posts)', {
-  method: 'POST',
-  body: JSON.stringify({ title: 'Đồ án', content: 'Lập trình mạng' }),
-  headers: { 'Content-type': 'application/json' }
-});
+const user = { name: "Kiet", job: "Developer" };
+
+fetch('[https://reqres.in/api/users](https://reqres.in/api/users)', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(user)
+})
+.then(res => res.json())
+.then(data => console.log("Kết quả:", data));
+
+### **3. Định dạng JSON**
+JSON là ngôn ngữ chung để Java và JavaScript có thể hiểu nhau trong mạng.
