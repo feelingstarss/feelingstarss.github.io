@@ -20,8 +20,8 @@ title: Trang Chủ
 
   /* Ảnh đại diện */
   .hero-avatar {
-    width: 160px;
-    height: 160px;
+    width: 280px;
+    height: 280px;
     border-radius: 50% !important;
     object-fit: cover;
     margin-bottom: 20px;
