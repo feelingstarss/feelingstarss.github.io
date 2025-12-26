@@ -123,6 +123,9 @@ permalink: /blog/
       <a href="{{ post.url | relative_url }}" class="post-card-link" data-title="{{ post.title | downcase | escape }}" data-content="{{ post.excerpt | strip_html | downcase | escape }}">
         <article class="post-card">
           <h2 class="post-title">{{ post.title }}</h2>
+          <span style="display: block; font-size: 0.85rem; color: #888; margin-bottom: 8px;">
+            📅 {{ post.date | date: "%d/%m/%Y" }}
+          </span>
           <p class="post-description">{{ post.excerpt | strip_html | truncate: 150 }}</p>
         </article>
       </a>

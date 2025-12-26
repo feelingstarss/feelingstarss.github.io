@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 6: WebSocket - Vũ khí tối thượng cho ứng dụng Real-time"
+date:   2025-12-24 08:00:00 +0700
 ---
 
 Hãy tưởng tượng bạn đang vào Facebook. Ai đó comment vào ảnh của bạn, thông báo hiện lên **ngay lập tức** mà bạn không cần tải lại trang. Magic? Không, đó là **WebSocket**.

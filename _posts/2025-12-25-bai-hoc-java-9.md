@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 9: Thế giới phẳng - Microservices, Cloud và Hơn thế nữa"
+date:   2025-12-27 08:00:00 +0700
 ---
 
 Chúc mừng bạn! Nếu bạn đọc đến dòng này, bạn đã đi hết chặng đường từ một người không biết gì về Internet Architecture đến việc hiểu sâu về Socket, TCP/UDP, HTTP, WebSocket và Security.

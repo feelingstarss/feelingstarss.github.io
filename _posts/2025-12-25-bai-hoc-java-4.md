@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 4: Javascript Event Loop & Async Await - Vì sao không nên để người dùng chờ?"
+date:   2025-12-22 08:00:00 +0700
 ---
 
 Chào mừng trở lại! Chúng ta đã "vọc" đủ sâu với Java Socket (Backend). Bây giờ hãy nhảy sang phía Frontend. Khi bạn làm việc với Network trên trình duyệt (Browser), quy tắc số 1 là: **Không bao giờ được chặn (block) giao diện người dùng.**

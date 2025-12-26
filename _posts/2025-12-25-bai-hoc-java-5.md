@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 5: Fetch API & JSON - Cây cầu nối Frontend và Backend"
+date:   2025-12-23 08:00:00 +0700
 ---
 
 Ngày nay, Frontend (React/Vue/Angular) và Backend (Java/Node.js) thường là hai dự án tách biệt. Chúng "nói chuyện" với nhau thông qua **API (Application Programming Interface)** trả về dữ liệu định dạng **JSON**.

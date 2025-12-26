@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 7: Node.js - Khi JavaScript không chỉ nằm trong trình duyệt"
+date:   2025-12-25 08:00:00 +0700
 ---
 
 Nếu Java là một anh lực sĩ vạm vỡ có thể gánh vác các tác vụ tính toán nặng nề (CPU Intensive), thì Node.js lại là một anh ninja nhanh nhẹn, chuyên xử lý hàng ngàn kết nối nhỏ cùng lúc (I/O Intensive).

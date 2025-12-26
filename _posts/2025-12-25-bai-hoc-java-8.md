@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 8: Đừng để Hacker đọc trộm tin nhắn của bạn!"
+date:   2025-12-26 08:00:00 +0700
 ---
 
 Trong 7 bài trước, chúng ta chỉ quan tâm đến việc làm sao để code "chạy được". Nhưng trong thực tế, code chạy được mà không bảo mật thì thà đừng viết còn hơn.

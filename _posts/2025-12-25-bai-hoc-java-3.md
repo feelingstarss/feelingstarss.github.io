@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 3: UDP - Giao thức \"Bắn và Quên\" dành cho Game & Livestream"
+date:   2025-12-21 08:00:00 +0700
 ---
 
 Nếu TCP là một anh bưu tá cẩn thận, bắt bạn ký nhận từng lá thư, thì UDP (User Datagram Protocol) giống như một cái máy bắn bóng tennis: nó cứ bắn liên tục về phía bạn, việc bạn đỡ được hay không nó không quan tâm. Nghe có vẻ vô trách nhiệm? Nhưng chính sự "vô tâm" đó lại là chìa khóa cho tốc độ (performance).

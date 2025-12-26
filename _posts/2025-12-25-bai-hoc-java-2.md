@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 2: Tự tay viết ứng dụng Chat với Java Socket & Multi-threading"
+date:   2025-12-20 08:00:00 +0700
 ---
 
 Ở bài trước, chúng ta đã biết TCP là giao thức tin cậy (reliable). Hôm nay, chúng ta sẽ hiện thực hóa lý thuyết đó bằng Java. Mục tiêu của chúng ta là xây dựng một **Chat Server** có thể phục vụ hàng trăm người chat cùng lúc, chứ không chỉ là mô hình 1-1 đơn điệu.

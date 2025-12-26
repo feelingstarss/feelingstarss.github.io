@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bài 1: Tổng quan về Lập trình mạng & Bí mật sau mỗi cú Click chuột"
+date:   2025-12-19 08:00:00 +0700
 ---
 
 Bạn đã bao giờ tự hỏi điều gì thực sự xảy ra khi bạn gõ `google.com` và nhấn Enter? Tại sao tin nhắn chat Facebook đến ngay lập tức trong khi email lại có thể chậm vài giây? Chào mừng bạn đến với **Lập trình mạng** (Network Programming) – nơi chúng ta khám phá "huyết mạch" của thế giới số.
