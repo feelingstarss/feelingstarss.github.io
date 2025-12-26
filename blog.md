@@ -110,7 +110,7 @@ permalink: /blog/
 <div class="post-list-container">
   
   <div class="custom-blog-header">
-    <h1>Góc Chia Sẻ Kiến Thức</h1>
+    <h1>Chia Sẻ Kiến Thức & Kinh Nghiệm</h1>
     <p>Chào mừng bạn đến với không gian học tập của Kiệt. Nơi lưu giữ những bài học tâm đắc về Java, Network và hành trình trở thành Developer chuyên nghiệp.</p>
   </div>
 
