@@ -131,3 +131,21 @@ code,
   letter-spacing: 1px !important;
   /* Thêm khoảng cách chữ cho thoáng */
 }
+
+/* === FIX IN ĐẬM TIÊU ĐỀ BÀI VIẾT & HEADING === */
+.post-title {
+  font-weight: 900 !important;
+  /* In đậm cực mạnh cho tiêu đề bài */
+  color: #fff !important;
+  /* Đảm bảo màu trắng nổi bật trên nền tối (nếu có) */
+}
+
+/* Đảm bảo tất cả các thẻ heading trong bài viết đều in đậm */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  font-weight: 800 !important;
+}

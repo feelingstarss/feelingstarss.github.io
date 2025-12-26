@@ -37,7 +37,7 @@ while(true) {
 
 Chúng ta sẽ tạo 2 file: `ChatServer.java` và `ChatClient.java`.
 
-#### File 1: ChatServer.java
+#### **File 1: ChatServer.java**
 
 ```java
 import java.io.*;
@@ -119,7 +119,7 @@ public class ChatServer {
 }
 ```
 
-#### File 2: ChatClient.java
+#### **File 2: ChatClient.java**
 
 Để test, bạn có thể chạy file này nhiều lần (mỗi lần là một cửa sổ chat khác nhau).
 
