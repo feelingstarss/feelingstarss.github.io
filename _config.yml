@@ -4,6 +4,7 @@ description: Trang blog chia sẻ kiến thức về Java và JavaScript.
 theme: minima
 plugins:
   - jekyll-feed
+future: true # Cho phép hiển thị bài viết ở tương lai (Post 9 - 27/12)
 
 # Menu yêu cầu
 header_pages:
