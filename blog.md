@@ -60,8 +60,8 @@ permalink: /blog/
 
   .post-title {
     font-size: 1.05rem !important; /* Đã chỉnh nhỏ lại theo ý bạn */
-    font-weight: 800 !important;
-    color: #1a1a1a;
+    font-weight: 900 !important; /* In đậm tối đa (Black) */
+    color: #000000 !important; /* Màu đen tuyền cho giống header */
     margin: 0 0 8px 0;
     display: block;
     white-space: nowrap;

@@ -31,8 +31,8 @@ title: Trang Chủ
 
   /* Tiêu đề chính */
   .hero-branding {
-    font-size: 1.8rem !important;
-    font-weight: bold !important;
+    font-size: 2rem !important; /* Tăng size chút cho oai */
+    font-weight: 900 !important; /* In đậm tối đa */
     color: #000000 !important;
     margin-bottom: 10px !important;
   }
@@ -78,7 +78,7 @@ title: Trang Chủ
   <!-- Ảnh đại diện -->
   <img src="/assets/images/avatar.png" alt="Kiet Avatar" class="hero-avatar">
 
-  <h1 class="hero-branding">Xin chào mình là Nguyễn Hứa Tuấn Kiệt</h1>
+  <h1 class="hero-branding">Nguyễn Hứa Tuấn Kiệt</h1>
   
   <p class="hero-subtitle">
     Chào mừng bạn đến với blog của mình
