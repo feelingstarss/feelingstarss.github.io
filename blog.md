@@ -18,13 +18,14 @@ permalink: /blog/
 
   #search-input {
     width: 100%;
-    padding: 12px 20px;
+    box-sizing: border-box; /* Quan trọng: Để padding không làm vỡ layout */
+    padding: 15px 25px; /* Tăng padding chút cho đẹp */
     font-size: 1rem;
     border: 2px solid #e1e4e8;
-    border-radius: 25px;
+    border-radius: 50px; /* Bo tròn mềm mại hơn */
     outline: none;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Shadow nhẹ cho nổi */
   }
 
   #search-input:focus {
