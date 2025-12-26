@@ -63,6 +63,8 @@ permalink: /blog/
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1.5 !important; /* Tăng chiều cao dòng để không bị cắt chữ g, y, j, q */
+    padding-bottom: 2px; /* Thêm padding dưới để chắc chắn không bị mất dấu nặng */
   }
 
   .post-description {
