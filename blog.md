@@ -17,7 +17,9 @@ permalink: /blog/
   }
 
   #search-input {
+    display: block; /* Ép hiển thị dạng block */
     width: 100%;
+    margin: 0; /* Xóa margin mặc định của trình duyệt */
     box-sizing: border-box; /* Quan trọng: Để padding không làm vỡ layout */
     padding: 15px 25px; /* Tăng padding chút cho đẹp */
     font-size: 1rem;
@@ -43,6 +45,7 @@ permalink: /blog/
 
   .post-card {
     background: #ffffff;
+    box-sizing: border-box; /* Thêm cái này để chắc chắn width tính cả padding/border */
     border: 1px solid #e1e4e8;
     border-radius: 12px;
     padding: 20px 25px; 
