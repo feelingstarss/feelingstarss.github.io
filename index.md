@@ -20,8 +20,8 @@ title: Trang Chủ
 
   /* Ảnh đại diện */
   .hero-avatar {
-    width: 280px;
-    height: 280px;
+    width: 180px; /* Nhỏ lại theo yêu cầu (cũ 280px) */
+    height: 180px;
     border-radius: 50% !important;
     object-fit: cover;
     object-position: top center; /* Giúp hiện rõ phần tóc */
@@ -81,7 +81,8 @@ title: Trang Chủ
   <h1 class="hero-branding">Nguyễn Hứa Tuấn Kiệt</h1>
   
   <p class="hero-subtitle">
-    Chào mừng bạn đến với blog của mình
+    Chào mừng bạn đến với không gian chia sẻ kiến thức của mình.<br>
+    Tại đây, mình viết về <b>Java Backend</b>, <b>Network Programming</b>, <b>Security</b> và những kinh nghiệm thực tế trên hành trình trở thành Software Engineer.
   </p>
 
   <div class="hero-buttons">
