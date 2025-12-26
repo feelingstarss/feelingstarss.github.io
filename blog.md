@@ -113,7 +113,7 @@ permalink: /blog/
 
   <div id="post-list">
     {% for post in site.posts %}
-      <a href="{{ post.url | relative_url }}" class="post-card-link" data-title="{{ post.title | downcase }}" data-content="{{ post.excerpt | strip_html | downcase }}">
+      <a href="{{ post.url | relative_url }}" class="post-card-link" data-title="{{ post.title | downcase | escape }}" data-content="{{ post.excerpt | strip_html | downcase | escape }}">
         <article class="post-card">
           <h2 class="post-title">{{ post.title }}</h2>
           <p class="post-description">{{ post.excerpt | strip_html | truncate: 150 }}</p>
