@@ -5,7 +5,7 @@ title:  "Bài 6: WebSocket - Vũ khí tối thượng cho ứng dụng Real-time
 
 Hãy tưởng tượng bạn đang vào Facebook. Ai đó comment vào ảnh của bạn, thông báo hiện lên **ngay lập tức** mà bạn không cần tải lại trang. Magic? Không, đó là **WebSocket**.
 
-### 1. HTTP vs WebSocket: Khác nhau chỗ nào?
+### **1. HTTP vs WebSocket: Khác nhau chỗ nào?**
 
 *   **HTTP (Truyền thống):**
     *   Client: "Có tin nhắn mới không?" -> Server: "Không". (Đóng kết nối)
@@ -17,7 +17,7 @@ Hãy tưởng tượng bạn đang vào Facebook. Ai đó comment vào ảnh c�
     *   Kết nối **MỞ LIÊN TỤC**.
     *   Khi có tin mới, Server tự động **BƠM** thẳng về Client ngay lập tức. Cả hai bên có thể nói chuyện bất cứ lúc nào (Full-duplex).
 
-### 2. Code Demo: Chat Server "Echo" 
+### **2. Code Demo: Chat Server "Echo"** 
 
 Để đơn giản, chúng ta sẽ dùng một Server test công cộng là `wss://echo.websocket.events`. Server này có nhiệm vụ: Bạn gửi cái gì lên, nó sẽ trả về y hệt cái đó (như tiếng vọng).
 
@@ -93,7 +93,7 @@ Bạn hãy tạo một file `index.html` và copy đoạn code này vào chạy 
 </html>
 ```
 
-### 3. Những lưu ý sống còn khi làm Real-time
+### **3. Những lưu ý sống còn khi làm Real-time**
 
 1.  **Mất kết nối (Reconnection):** Wifi người dùng có thể chập chờn. Bạn phải viết code tự động kết nối lại (Auto-reconnect) nếu bị ngắt.
     ```javascript

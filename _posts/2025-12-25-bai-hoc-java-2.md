@@ -5,7 +5,7 @@ title:  "Bài 2: Tự tay viết ứng dụng Chat với Java Socket & Multi-thr
 
 Ở bài trước, chúng ta đã biết TCP là giao thức tin cậy (reliable). Hôm nay, chúng ta sẽ hiện thực hóa lý thuyết đó bằng Java. Mục tiêu của chúng ta là xây dựng một **Chat Server** có thể phục vụ hàng trăm người chat cùng lúc, chứ không chỉ là mô hình 1-1 đơn điệu.
 
-### 1. Java Socket hoạt động như thế nào?
+### **1. Java Socket hoạt động như thế nào?**
 
 Trong Java, gói `java.net` cung cấp hai class chính:
 *   `ServerSocket`: Dùng cho phía Server. Nó sẽ "bind" (gắn) vào một cổng và liên tục lắng nghe.
@@ -20,7 +20,7 @@ Quy trình:
 
 ---
 
-### 2. Vấn đề của Server đơn luồng (Single-threaded)
+### **2. Vấn đề của Server đơn luồng (Single-threaded)**
 
 Nếu bạn viết code theo cách tuần tự thông thường:
 ```java
@@ -33,7 +33,7 @@ while(true) {
 
 ---
 
-### 3. Thực hành: Xây dựng Chat Server Đa luồng
+### **3. Thực hành: Xây dựng Chat Server Đa luồng**
 
 Chúng ta sẽ tạo 2 file: `ChatServer.java` và `ChatClient.java`.
 
@@ -164,13 +164,13 @@ public class ChatClient {
 
 ---
 
-### 4. Lưu ý quan trọng khi lập trình Socket
+### **4. Lưu ý quan trọng khi lập trình Socket**
 
 1.  **Đóng resources (Resource Closing):** Luôn nhớ đóng Socket, InputStream, OutputStream trong khối `finally` hoặc dùng `try-with-resources`. Nếu không, Server của bạn sẽ bị rò rỉ bộ nhớ (memory leak) và sập sau vài ngày.
 2.  **Thread Safety:** Khi nhiều luồng cùng truy cập vào biến `clientWriters`, ta phải dùng `synchronized` để tránh xung đột dữ liệu (Race Condition).
 3.  **Port:** Đừng dùng các port dưới 1024 (như 80, 443) vì thường cần quyền Admin. Hãy dùng các số lớn như 12345, 8080...
 
-### 5. Bài tập về nhà
+### **5. Bài tập về nhà**
 Code hiện tại chỉ broadcast tin nhắn cho tất cả. Bạn hãy nâng cấp nó:
 *   Yêu cầu người dùng nhập tên khi mới vào (Ví dụ: "Enter your name: Kiet").
 *   Khi chat, hiện tên người gửi trước tin nhắn (Ví dụ: `Kiet: Hello mọi người`).

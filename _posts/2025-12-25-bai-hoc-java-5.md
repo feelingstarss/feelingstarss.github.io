@@ -7,7 +7,7 @@ Ngày nay, Frontend (React/Vue/Angular) và Backend (Java/Node.js) thường là
 
 Trong quá khứ, chúng ta dùng `XMLHttpRequest` (AJAX) rất cực khổ. Giờ đây, **Fetch API** đã được tích hợp sẵn vào mọi trình duyệt hiện đại.
 
-### 1. JSON là gì? (JavaScript Object Notation)
+### **1. JSON là gì? (JavaScript Object Notation)**
 Nó là định dạng dữ liệu dạng text, nhẹ và dễ đọc.
 ```json
 {
@@ -19,14 +19,14 @@ Nó là định dạng dữ liệu dạng text, nhẹ và dễ đọc.
 *   **Backend gửi đi:** Java Object -> Biến thành chuỗi JSON (Serialization).
 *   **Frontend nhận về:** Chuỗi JSON -> Biến thành JavaScript Object (Deserialization).
 
-### 2. Các phương thức HTTP cơ bản (HTTP Verbs)
+### **2. Các phương thức HTTP cơ bản (HTTP Verbs)**
 Khi gọi API, bạn phải nói rõ bạn muốn làm gì:
 *   **GET**: Lấy dữ liệu về (Mặc định).
 *   **POST**: Thêm mới dữ liệu.
 *   **PUT**: Cập nhật dữ liệu (ghi đè).
 *   **DELETE**: Xóa dữ liệu.
 
-### 3. Code chuẩn: Viết API Wrapper tái sử dụng
+### **3. Code chuẩn: Viết API Wrapper tái sử dụng**
 
 Đừng bao giờ gọi `fetch` trần trụi ở khắp mọi nơi trong code của bạn. Hãy viết một hàm chung (Helper function) để tái sử dụng và xử lý lỗi tập trung.
 
@@ -71,7 +71,7 @@ async function callAPI(endpoint, method = 'GET', body = null) {
 }
 ```
 
-### 4. Cách sử dụng (Clean Code)
+### **4. Cách sử dụng (Clean Code)**
 
 Giờ đây code của bạn sẽ cực kỳ gọn gàng:
 
@@ -105,7 +105,7 @@ async function createUser() {
 }
 ```
 
-### 5. Lưu ý về CORS (Cross-Origin Resource Sharing)
+### **5. Lưu ý về CORS (Cross-Origin Resource Sharing)**
 Một ngày đẹp trời, bạn thấy lỗi đỏ lòm trên Console: `Access to fetch... has been blocked by CORS policy`.
 Đừng hoảng! Đây là cơ chế bảo mật của trình duyệt. Nó chặn không cho Web A gọi API của Web B nếu Web B không cho phép.
 *   **Cách đơn giản:** Cài Extension "Allow CORS" (chỉ dùng khi dev).

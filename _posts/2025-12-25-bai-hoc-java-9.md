@@ -7,7 +7,7 @@ Chúc mừng bạn! Nếu bạn đọc đến dòng này, bạn đã đi hết c
 
 Nhưng... "Học, học nữa, học mãi". Đây mới chỉ là sự khởi đầu. Thế giới công nghệ không dừng lại ở Client-Server đơn thuần.
 
-### 1. Từ Monolith đến Microservices
+### **1. Từ Monolith đến Microservices**
 
 *   **Monolith (Nguyên khối):** Ứng dụng của bạn là một file `.jar` khổng lồ chứa tất cả mọi thứ: Quản lý User, Thanh toán, Giao hàng...
     *   *Vấn đề:* Mỗi lần sửa một lỗi nhỏ ở chức năng User, bạn phải tắt toàn bộ hệ thống để deploy lại. Nếu một chức năng bị lỗi, cả hệ thống sập theo.
@@ -16,7 +16,7 @@ Nhưng... "Học, học nữa, học mãi". Đây mới chỉ là sự khởi đ
     *   *Lợi ích:* Dễ mở rộng, Service nào hỏng thì chỉ hỏng đúng phần đó thôi, các phần khác vẫn chạy. Các Team có thể code song song bằng các ngôn ngữ khác nhau (Team User dùng Java, Team Chat dùng Node.js).
     *   *Thách thức:* Quản lý kết nối giữa hàng trăm Service này là một cơn ác mộng nếu không có kinh nghiệm.
 
-### 2. Cuộc cách mạng Container (Docker)
+### **2. Cuộc cách mạng Container (Docker)**
 
 Ngày xưa, Developer code trên máy mình chạy ngon lành, nhưng đưa lên máy Server thì lỗi tùm lum ("It works on my machine!"). Lý do là sai khác môi trường, thư viện, version Java...
 
@@ -24,14 +24,14 @@ Ngày xưa, Developer code trên máy mình chạy ngon lành, nhưng đưa lên
 
 -> **Lời khuyên:** Hãy học Docker ngay hôm nay. Nó là kỹ năng bắt buộc phải có (Must-have).
 
-### 3. Cloud Computing (Điện toán đám mây)
+### **3. Cloud Computing (Điện toán đám mây)**
 
 Thay vì tự mua máy chủ vật lý về đặt ở công ty (tốn tiền điện, máy lạnh, bảo trì), chúng ta thuê máy chủ của Amazon (AWS), Google (GCP) hay Microsoft (Azure).
 *   **IaaS:** Thuê máy ảo (EC2).
 *   **PaaS:** Thuê nền tảng chạy code (Heroku, Google App Engine).
 *   **SaaS:** Dùng luôn phần mềm (Gmail, Dropbox).
 
-### 4. Lộ trình tiếp theo (Roadmap)
+### **4. Lộ trình tiếp theo (Roadmap)**
 
 Bạn nên học gì tiếp theo để trở thành Senior?
 

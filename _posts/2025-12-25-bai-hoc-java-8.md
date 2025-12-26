@@ -7,7 +7,7 @@ Trong 7 bài trước, chúng ta chỉ quan tâm đến việc làm sao để co
 
 Hôm nay, chúng ta sẽ bàn về **Network Security** (Bảo mật mạng) - lá chắn duy nhất bảo vệ người dùng của bạn.
 
-### 1. Tấn công Man-in-the-Middle (MITM) là gì?
+### **1. Tấn công Man-in-the-Middle (MITM) là gì?**
 
 Hãy tưởng tượng bạn (A) đang gửi thư tình cho cô ấy (B) trong lớp học. Bạn nhờ thằng bạn cùng bàn (C) chuyền thư giúp.
 *   **Kịch bản không an toàn (HTTP):** Bạn đưa thư không dán tem. Thằng C mở ra đọc trộm ("À há, thằng này thích con B"), thậm chí nó có thể sửa nội dung thư thành "Tao ghét mày" rồi mới đưa cho B. -> Toang!
@@ -15,7 +15,7 @@ Hãy tưởng tượng bạn (A) đang gửi thư tình cho cô ấy (B) trong l
 
 Internet cũng vậy. Khi bạn ngồi quán Cafe Public Wifi, Hacker có thể ngồi ngay bàn bên cạnh và bắt toàn bộ gói tin bạn gửi đi. Nếu bạn dùng HTTP thường, hắn sẽ thấy hết mật khẩu, số thẻ tín dụng của bạn.
 
-### 2. HTTPS và TLS Handshake
+### **2. HTTPS và TLS Handshake**
 Để chống lại MITM, thế giới tạo ra **HTTPS** (Hypertext Transfer Protocol Secure). Chữ **S** ở cuối là phép màu.
 
 Cơ chế hoạt động (Đơn giản hóa):
@@ -25,7 +25,7 @@ Cơ chế hoạt động (Đơn giản hóa):
 4.  **Server:** Dùng Khóa Riêng (Private Key) để giải mã và lấy được khóa bí mật.
 5.  **Kết nối thiết lập:** Từ giờ cả hai dùng khóa bí mật chung đó để nói chuyện. Bố ai mà nghe lén được nữa!
 
-### 3. Nguyên tắc vàng: "Never Trust User Input"
+### **3. Nguyên tắc vàng: "Never Trust User Input"**
 
 Đừng bao giờ tin tưởng dữ liệu người dùng gửi lên. Hacker luôn tìm cách chèn mã độc vào các ô Input.
 

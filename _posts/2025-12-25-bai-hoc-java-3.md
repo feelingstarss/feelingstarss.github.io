@@ -5,7 +5,7 @@ title:  "Bài 3: UDP - Giao thức \"Bắn và Quên\" dành cho Game & Livestre
 
 Nếu TCP là một anh bưu tá cẩn thận, bắt bạn ký nhận từng lá thư, thì UDP (User Datagram Protocol) giống như một cái máy bắn bóng tennis: nó cứ bắn liên tục về phía bạn, việc bạn đỡ được hay không nó không quan tâm. Nghe có vẻ vô trách nhiệm? Nhưng chính sự "vô tâm" đó lại là chìa khóa cho tốc độ (performance).
 
-### 1. Tại sao Game Liên Minh/PUBG dùng UDP?
+### **1. Tại sao Game Liên Minh/PUBG dùng UDP?**
 
 Hãy tưởng tượng bạn đang chơi game bắn súng.
 *   **Trường hợp dùng TCP:** Bạn bắn 1 viên đạn. Gói tin bị lag 0.5s. Server dừng cả trận đấu lại để chờ gói tin đó đến nơi rồi mới cho chạy tiếp. -> **LAG GIẬT CỤC.**
@@ -15,7 +15,7 @@ UDP phù hợp khi: **Tốc độ > Sự chính xác tuyệt đối.**
 
 ---
 
-### 2. Code Demo Java: Gửi tin nhắn Broadcast
+### **2. Code Demo Java: Gửi tin nhắn Broadcast**
 
 Khác với TCP (cần `Socket` và `ServerSocket`), UDP sử dụng:
 *   `DatagramSocket`: Để gửi/nhận.
@@ -80,12 +80,12 @@ public class UDPSender {
 
 ---
 
-### 3. Sự khác biệt trong Code (So với TCP)
+### **3. Sự khác biệt trong Code (So với TCP)**
 1.  **Không có `accept()`:** UDP không cần thiết lập kết nối (connection-less). Nó cứ thế mà lắng nghe thôi.
 2.  **Giới hạn kích thước:** Một gói tin UDP (`DatagramPacket`) thường bị giới hạn kích thước (thường là 64KB). Nếu bạn gửi file lớn, bạn phải tự cắt nhỏ nó ra. TCP làm việc này tự động giúp bạn (stream).
 3.  **Thứ tự không đảm bảo:** Bạn gửi tin A trước, tin B sau. Nhưng người nhận có thể nhận B trước, A sau. Nếu muốn đúng thứ tự, bạn phải tự đánh số trong code (Ví dụ: `1:Hello`, `2:How are you`).
 
-### 4. Bài tập nâng cao
+### **4. Bài tập nâng cao**
 Hãy thử viết một ứng dụng **Stream Audio đơn giản**:
 *   Sender: Đọc một file nhạc `.wav`, cắt thành từng mảng byte nhỏ (chunk) 1024 bytes.
 *   Gửi liên tục qua UDP.

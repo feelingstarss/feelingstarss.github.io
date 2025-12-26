@@ -7,7 +7,7 @@ Bạn đã bao giờ tự hỏi điều gì thực sự xảy ra khi bạn gõ `
 
 Trong bài viết đầu tiên này, chúng ta sẽ không viết code ngay. Thay vào đó, chúng ta sẽ xây dựng một nền tảng tư duy vững chắc về các giao thức và mô hình mạng. Nếu không hiểu những thứ "dưới nắp ca-po" này, bạn sẽ mãi chỉ là một "Coder" biết gõ phím chứ không phải một "Engineer" biết giải quyết vấn đề.
 
-### 1. Mạng máy tính thực chất là gì?
+### **1. Mạng máy tính thực chất là gì?**
 
 Về bản chất, mạng máy tính chỉ là vấn đề **Giao tiếp (Communication)**. Giống như hai người nói chuyện cần có ngôn ngữ chung, các máy tính muốn hiểu nhau cần có **Giao thức (Protocol)**.
 
@@ -28,7 +28,7 @@ Về bản chất, mạng máy tính chỉ là vấn đề **Giao tiếp (Commun
 
 ---
 
-### 2. Cuộc chiến vĩ đại: TCP vs UDP (Tầng Transport)
+### **2. Cuộc chiến vĩ đại: TCP vs UDP (Tầng Transport)**
 
 Ở tầng 4 (Transport), có hai "gã khổng lồ" thống trị Internet. Việc chọn sai giao thức ở đây có thể giết chết ứng dụng của bạn.
 
@@ -46,7 +46,7 @@ Về bản chất, mạng máy tính chỉ là vấn đề **Giao tiếp (Commun
 
 ---
 
-### 3. Mô hình Client-Server (Khách - Chủ)
+### **3. Mô hình Client-Server (Khách - Chủ)**
 
 Đây là kiến trúc xương sống của Internet hiện đại.
 
@@ -61,7 +61,7 @@ Không hẳn. Máy tính cá nhân của bạn cũng có thể là Server. Bất
 
 ---
 
-### 4. Deep Dive: Chuyện gì xảy ra khi bạn gõ 'google.com'?
+### **4. Deep Dive: Chuyện gì xảy ra khi bạn gõ 'google.com'?**
 
 Đây là câu hỏi phỏng vấn kinh điển cho mọi vị trí Backend/DevOps. Hãy đi qua luồng chạy (flow) cơ bản:
 
@@ -75,7 +75,7 @@ Không hẳn. Máy tính cá nhân của bạn cũng có thể là Server. Bất
 
 ---
 
-### 5. Bài tập về nhà
+### **5. Bài tập về nhà**
 
 Để chuẩn bị cho bài sau (Code Socket TCP bằng Java), bạn hãy thực hiện:
 1.  Mở Command Prompt (CMD) hoặc Terminal.

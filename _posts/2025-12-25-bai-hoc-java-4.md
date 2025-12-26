@@ -7,7 +7,7 @@ Chào mừng trở lại! Chúng ta đã "vọc" đủ sâu với Java Socket (B
 
 Nếu code mạng của bạn chạy mất 5 giây để tải dữ liệu và trong 5 giây đó trỏ chuột bị đơ, không cuộn trang được -> Người dùng sẽ tắt web ngay lập tức. Đây là lúc **Lập trình bất đồng bộ (Asynchronous Programming)** lên ngôi.
 
-### 1. Sự ảo diệu của JavaScript: Đơn luồng nhưng không cô đơn
+### **1. Sự ảo diệu của JavaScript: Đơn luồng nhưng không cô đơn**
 
 JavaScript là ngôn ngữ **Single-threaded** (Đơn luồng). Nghĩa là tại một thời điểm, nó schỉ làm được **một việc duy nhất**.
 *   Vậy tại sao nó có thể vừa tải nhạc, vừa đếm giờ, vừa nhận sự kiện click chuột?
@@ -20,7 +20,7 @@ Hãy tưởng tượng JS là một anh phục vụ bàn duy nhất trong quán 
 4.  Khi Cafe xong, pha chế bấm chuông (Callback Queue).
 5.  JS phục vụ xong Khách B, quay lại lấy Cafe đưa cho Khách A.
 
-### 2. Sự tiến hóa: Từ Callback Hell đến Async/Await
+### **2. Sự tiến hóa: Từ Callback Hell đến Async/Await**
 
 #### Thời kỳ đồ đá: Callback
 Cách cũ để xử lý việc "khi nào xong thì gọi tôi":
@@ -64,14 +64,14 @@ xuLyCongViec();
 console.log("Dòng này sẽ chạy TRƯỚC dòng 2 và 3 vì JS không chờ đợi!");
 ```
 
-### 3. Quy tắc vàng khi gọi API mạng
+### **3. Quy tắc vàng khi gọi API mạng**
 1.  **Luôn dùng `try...catch`**: Mạng internet không ổn định. Server có thể sập, wifi có thể rớt. Không bắt lỗi -> Ứng dụng "chết" bất đắc kỳ tử.
 2.  **Hiển thị Loading**: Trước khi `await`, hãy hiện cái vòng quay loading. Sau khi xong (trong `finally`), hãy tắt nó đi.
 3.  **Không `await` trong vòng lặp `forEach`**: Đây là lỗi kinh điển.
     *   Sai: `arr.forEach(async item => { await ... })` -> Nó sẽ chạy song song hết, không chờ nhau.
     *   Đúng: Dùng vòng lặp `for...of` nếu muốn chạy tuần tự.
 
-### 4. Bài tập thực hành
+### **4. Bài tập thực hành**
 Bạn hãy mở Console của trình duyệt (F12 -> Console) và copy đoạn code sau để chạy thử:
 
 ```javascript

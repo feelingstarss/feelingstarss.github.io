@@ -7,7 +7,7 @@ Nếu Java là một anh lực sĩ vạm vỡ có thể gánh vác các tác v�
 
 Hôm nay, chúng ta sẽ xem xét cách Node.js xử lý TCP Socket khác biệt như thế nào so với Java mà chúng ta đã học ở bài 2.
 
-### 1. Cuộc chiến tư tưởng: Multi-thread vs Event-driven
+### **1. Cuộc chiến tư tưởng: Multi-thread vs Event-driven**
 
 *   **Java (Multi-thread):** Mỗi khi có khách đến (Client connect), Server tạo ra một Thread mới.
     *   *Ưu điểm:* Dễ tư duy logic.
@@ -18,7 +18,7 @@ Hôm nay, chúng ta sẽ xem xét cách Node.js xử lý TCP Socket khác biệt
     *   *Ưu điểm:* Cực kỳ nhẹ. Một Server Node.js 512MB RAM có thể xử lý hàng chục nghìn kết nối.
     *   *Nhược điểm:* Không giỏi tính toán nặng (Ví dụ: Xử lý video, AI).
 
-### 2. Code Demo: TCP Server siêu tốc với Node.js
+### **2. Code Demo: TCP Server siêu tốc với Node.js**
 
 Node.js có sẵn module `net` cực mạnh. Bạn không cần cài đặt thư viện bên ngoài nào cả.
 
@@ -70,13 +70,13 @@ server.listen(12345, () => {
 });
 ```
 
-### 3. Cách chạy thử
+### **3. Cách chạy thử**
 1.  Cài đặt Node.js (nếu chưa có).
 2.  Mở Terminal, gõ: `node server.js`
 3.  **Điều thú vị:** Bạn hoàn toàn có thể dùng **Java Client** (ở Bài 2) để kết nối vào **Node.js Server** này!
     *   *Vì sao?* Vì cả hai đều nói chung một ngôn ngữ là **Giao thức TCP**. Đừng quan trọng ngôn ngữ lập trình là gì, miễn là tuân thủ giao thức mạng chuẩn.
 
-### 4. Kết luận
+### **4. Kết luận**
 Node.js sinh ra là để làm mạng. Cú pháp đơn giản, hiệu năng cao cho các ứng dụng real-time. Tuy nhiên, đừng thần thánh hóa nó. Nếu bạn cần làm một hệ thống ngân hàng cần tính toán giao dịch phức tạp và an toàn kiểu dữ liệu chặt chẽ, Java vẫn là lựa chọn số 1.
 
 Ở **Bài 8**, chúng ta sẽ nói về một chủ đề "khô khan" nhưng cực kỳ quan trọng: **Bảo mật**. Làm sao để người khác không đọc trộm tin nhắn của bạn trên đường truyền?
