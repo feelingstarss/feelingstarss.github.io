@@ -121,10 +121,13 @@ code,
 /* FIX GIAO DIỆN TIÊU ĐỀ HEADER */
 .site-title,
 .site-title:visited {
-  text-transform: none !important;
-  /* Tắt viết hoa toàn bộ */
+  text-transform: uppercase !important;
+  /* In hoa toàn bộ theo yêu cầu */
   font-weight: 900 !important;
   /* In đậm cực mạnh */
+  font-size: 1.6rem !important;
+  /* Tăng kích thước chữ */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
-  /* Đảm bảo font hỗ trợ đậm */
+  letter-spacing: 1px !important;
+  /* Thêm khoảng cách chữ cho thoáng */
 }
