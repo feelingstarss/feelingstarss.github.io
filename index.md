@@ -24,6 +24,7 @@ title: Trang Chủ
     height: 280px;
     border-radius: 50% !important;
     object-fit: cover;
+    object-position: top center; /* Giúp hiện rõ phần tóc */
     margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
