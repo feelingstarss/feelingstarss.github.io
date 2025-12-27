@@ -5,6 +5,7 @@ permalink: /profile/
 ---
 
 <style>
+  /* Ẩn tiêu đề mặc định 'Profile' của theme */
   .post-header h1.post-title {
     display: none !important;
   }
