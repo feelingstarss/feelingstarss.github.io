@@ -9,7 +9,7 @@ Nếu bạn có bất kỳ thắc mắc nào hoặc muốn trao đổi thêm v�
 ## Thông tin liên hệ
 
 - **Email:** kietnguyen030696@gmail.com
-- **Facebook:** <a href="https://www.facebook.com/Kietnguyennnn" target="_blank">https://www.facebook.com/Kietnguyennnn</a>
+- **Facebook:** <a href="https://www.facebook.com/Kietnguyennnn" target="_blank">FB của mình</a>
 - **GitHub:** <a href="https://github.com/feelingstarss" target="_blank">github.com/feelingstarss</a>
 
 
