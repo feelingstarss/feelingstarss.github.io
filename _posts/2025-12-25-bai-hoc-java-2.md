@@ -177,4 +177,4 @@ Code hiện tại chỉ broadcast tin nhắn cho tất cả. Bạn hãy nâng c�
 *   Khi chat, hiện tên người gửi trước tin nhắn (Ví dụ: `Kiet: Hello mọi người`).
 *   Thêm chức năng chat thầm (private message): `/w Son hom nay di an khong?`.
 
-Hẹn gặp lại ở **Bài 3**, chúng ta sẽ khám phá UDP - giao thức "tốc độ bàn thờ" dùng trong Game Online!
+Hẹn gặp lại ở **Bài 3**, chúng ta sẽ khám phá UDP - giao thức "tốc độ bàn thờ" dùng trong Game Online!<!-- Final Update -->
