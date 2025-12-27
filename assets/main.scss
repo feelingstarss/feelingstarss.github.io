@@ -150,4 +150,149 @@ code,
   font-weight: 800 !important;
 }
 
-/* Final Update *//* */
+/* Final Update */
+
+/* === CV PROFILE LAYOUT === */
+.cv-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 1000px;
+  /* Adjust as needed */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.cv-sidebar {
+  flex: 1;
+  min-width: 280px;
+  /* Ensure sidebar doesn't get too small */
+  background-color: #f5f0e6;
+  /* Beige/Cream color from image */
+  padding: 40px 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.cv-main {
+  flex: 2;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 40px 40px;
+}
+
+/* Sidebar Elements */
+.cv-avatar-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cv-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-section-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #333;
+  color: #333;
+  margin-top: 30px;
+}
+
+.cv-sidebar .cv-section-title {
+  border-color: #bbb;
+  /* Softer border for sidebar headers */
+}
+
+
+.cv-contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.cv-contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+.cv-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.cv-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Main Content Elements */
+.cv-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cv-role {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.cv-main h3 {
+  margin-top: 0;
+}
+
+.cv-experience-item,
+.cv-education-item {
+  margin-bottom: 25px;
+}
+
+.cv-job-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.cv-date {
+  font-style: italic;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.cv-company {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cv-description {
+  line-height: 1.6;
+}
