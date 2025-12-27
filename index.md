@@ -5,9 +5,8 @@ title: Trang Chủ
 
 
 <style>
-  /* CỐ ĐỊNH GIAO DIỆN TRANG CHỦ */
   .home-container {
-    background-color: #ffffff !important; /* Đặt lại nền trắng cho sạch sẽ nếu user muốn */
+    background-color: #ffffff !important;
     color: #333333 !important;
     display: flex !important;
     flex-direction: column !important;
@@ -18,33 +17,29 @@ title: Trang Chủ
     min-height: 60vh !important;
   }
 
-  /* Ảnh đại diện */
   .hero-avatar {
-    width: 180px; /* Nhỏ lại theo yêu cầu (cũ 280px) */
+    width: 180px;
     height: 180px;
     border-radius: 50% !important;
     object-fit: cover;
-    object-position: top center; /* Giúp hiện rõ phần tóc */
+    object-position: top center;
     margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
-  /* Tiêu đề chính */
   .hero-branding {
-    font-size: 2rem !important; /* Tăng size chút cho oai */
-    font-weight: 900 !important; /* In đậm tối đa */
+    font-size: 2rem !important;
+    font-weight: 900 !important;
     color: #000000 !important;
     margin-bottom: 10px !important;
   }
 
-  /* Subtitle */
   .hero-subtitle {
     font-size: 1.1rem !important;
     color: #666 !important;
     margin-bottom: 30px !important;
   }
 
-  /* Button Container */
   .hero-buttons {
     display: flex !important;
     gap: 20px !important;
@@ -52,18 +47,17 @@ title: Trang Chủ
     width: 100% !important;
   }
 
-  /* Nút bấm (ĐÓNG KHUNG) */
   .btn-dark-option {
-    display: inline-block !important; /* QUAN TRỌNG: Để hiện khung */
+    display: inline-block !important;
     padding: 12px 35px !important;
     background-color: transparent !important;
     color: #333 !important;
-    border: 2px solid #333 !important; /* Viền đen rõ ràng */
+    border: 2px solid #333 !important;
     border-radius: 8px !important;
     font-weight: bold !important;
     text-decoration: none !important;
     transition: all 0.3s ease !important;
-    min-width: 120px !important; /* Độ rộng tối thiểu */
+    min-width: 120px !important;
     text-align: center !important;
   }
 
@@ -75,7 +69,6 @@ title: Trang Chủ
 </style>
 
 <div class="home-container">
-  <!-- Ảnh đại diện -->
   <img src="/assets/images/avatar.png" alt="Kiet Avatar" class="hero-avatar">
 
   <h1 class="hero-branding">Nguyễn Hứa Tuấn Kiệt</h1>
@@ -90,4 +83,3 @@ title: Trang Chủ
      <a href="/blog" class="btn btn-dark-option">Blog</a>
   </div>
 </div>
-<!-- Final Update -->

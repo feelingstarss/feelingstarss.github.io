@@ -5,7 +5,6 @@ permalink: /profile/
 ---
 
 <style>
-  /* Ẩn tiêu đề mặc định 'Profile' của theme */
   .post-header h1.post-title {
     display: none !important;
   }
@@ -68,4 +67,3 @@ Mình luôn chủ động tìm tòi và cập nhật các công nghệ mới. D�
 
 
 > *"Learning never exhausts the mind."*
-<!-- Final Update -->
