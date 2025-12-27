@@ -1,9 +1,47 @@
+<style>
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-left {
+        color: #777;
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
+    .footer-right {
+        text-align: right;
+        color: #777;
+        font-size: 0.95rem;
+    }
+
+    /* Mobile responsive: Stack and center */
+    @media (max-width: 600px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer-right {
+            text-align: center;
+        }
+    }
+</style>
+
 <footer class="site-footer h-card" style="padding: 30px 0; border-top: 1px solid #eee; margin-top: 50px;">
-    <div class="wrapper" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-        <div style="color: #777; font-size: 0.95rem; font-weight: 500;">
+    <div class="wrapper footer-content">
+        <!-- Bên trái: Copyright -->
+        <div class="footer-left">
             &copy; 2025 Kiệt Nguyễn Blog
         </div>
-        <div style="text-align: right; color: #777; font-size: 0.95rem;">
+
+        <!-- Bên phải: Thông tin thêm -->
+        <div class="footer-right">
             <div style="font-size: 0.9em; font-weight: normal;">Chia sẻ kiến thức - Kết nối đam mê</div>
             <div style="font-size: 0.8em; color: #999; font-weight: normal;">Powered by Jekyll & GitHub Pages</div>
         </div>
