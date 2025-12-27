@@ -15,6 +15,11 @@ permalink: /profile/
   <img src="/assets/images/avatar.png" style="border-radius: 50%; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px; width: 280px; height: 280px; object-fit: cover; object-position: top center;" alt="Nguyen Hua Tuan Kiet">
   <h1 style="margin-bottom: 10px;">Nguyễn Hứa Tuấn Kiệt</h1>
   <p style="color: #666; font-size: 1.1em; font-style: italic;">Sinh viên An Ninh Mạng - HUTECH</p>
+  <div style="margin-top: 15px;">
+    <a href="file:///D:/CV_NguyenHuaTuanKiet.pdf" target="_blank" style="display: inline-block; padding: 10px 25px; border: 2px solid #333; border-radius: 6px; text-decoration: none; color: #333; font-weight: bold; transition: all 0.3s ease;">
+      CV
+    </a>
+  </div>
 </div>
 
 ## 👋 Xin chào!
